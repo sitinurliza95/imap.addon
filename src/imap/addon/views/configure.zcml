@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="imap.addon">
+
+ <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+    name="imap-organization-view"
+    for="*"
+    class=".imap_organization_view.ImapOrganizationView"
+    template="imap_organization_view.pt"
+    permission="zope2.View"
+    layer="imap.addon.interfaces.IImapAddonLayer"
+    />
+
+</configure>
